@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Oswald;
+    src: url(/src/assets/fonts/oswald-variablefont_wght.ttf);
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(/src/assets/fonts/merriweather-regular.ttf);
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(/src/assets/fonts/merriweather-bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(/src/assets/fonts/merriweather-italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(/src/assets/fonts/merriweather-bolditalic.ttf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Merriweather;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+a {
+    color: black;
+    text-decoration-line: none;
+}
+a:hover {
+    text-decoration-line: underline;
+}
+
+#app {
+    min-height: 100vw;
+    max-width: 1080px;
+    background-color: #f8f8f8;
+    margin: 0 auto 0 auto;
+    padding: 20px 40px 40px 40px;
+}
+
+@media only screen and (max-width: 477px) {
+    #app {
+        padding: 20px 10px 40px 10px;
+    }
+}
