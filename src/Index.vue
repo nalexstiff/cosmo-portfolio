@@ -104,12 +104,14 @@ const projects = [
                 environments in Blender and animated camera
                 movements, vehicles and effects. I used Synty
                 Studios’ sci-fi city asset pack to quickly
-                layout these scenes in 3d.`
+                layout these scenes in 3d.`,
+            `In 3d modeling, an ngon is any face with more
+                than four vertices, which inspired the title
+                for this clip.`
         ],
         items: [
             {type: "image", src: "frame0064.jpg", alt: "A 3d render of a flying car chased by a cop with a futuristic city in the background."},
             {type: "image", src: "frame0361.jpg", alt: "A 3d render of a flying car chased by a cop, weaving through traffic in a highway tunnel."},
-            {type: "foo", src: "frame0064.jpg"}
         ]
     }
 ]
