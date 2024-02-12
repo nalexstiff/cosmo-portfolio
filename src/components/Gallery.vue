@@ -8,7 +8,7 @@ defineProps({
 
 <template>
     <div class="gallery">
-        <GalleryItem v-for="project in projects" :image="project.images[0]" :link="project.id" />
+        <GalleryItem v-for="project in projects" :image="project.thumb" :link="project.id" />
     </div>
 </template>
 

@@ -1,18 +1,20 @@
 <script setup>
 defineProps({
-    images: Array
+    items: Array
 })
 </script>
 
 <template>
     <div class="project-container">
-        <div class="project-text">
+        <div class="project-caption">
             <h1 class="project-title"><slot name="title">Title</slot></h1>
             <div class="project-text"><slot>Text</slot></div>
             <a href="#top">▲ gallery</a>
         </div>
-        <div class="project-images-list">
-           <img v-for="image in images" class="project-image" :src="'/artwork/' + image.src" :alt="image.alt" /> 
+        <div class="project-items-list">
+            <template v-for="item in items">
+                <img v-if="item.type == 'image'" class="project-item" :src="'/artwork/' + item.src" :alt="item.alt" /> 
+            </template>
         </div>
     </div>
 </template>
@@ -25,13 +27,13 @@ defineProps({
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.project-images-list {
+.project-items-list {
     grid-column-end: span 2;
     display: grid;
     gap: 20px;
 }
 
-.project-image {
+.project-item {
     width: 100%;
 }
 

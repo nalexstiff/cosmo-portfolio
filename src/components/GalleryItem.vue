@@ -4,7 +4,7 @@
 
 <template>
     <a class="gallery-link" :href="'#' + link">
-        <img class="gallery-image" :src="'/artwork/' + image.src" :alt="image.alt" />
+        <img class="gallery-image" :src="'/artwork/' + image" />
     </a>
 </template>
 
