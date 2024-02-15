@@ -110,6 +110,7 @@ const projects = [
                 for this clip.`
         ],
         items: [
+            {type: "embed", url: "https://www.youtube.com/embed/rUyjwBKx-Ek?si=-q9OomWDskuKRJ1W"},
             {type: "image", src: "frame0064.jpg", alt: "A 3d render of a flying car chased by a cop with a futuristic city in the background."},
             {type: "image", src: "frame0361.jpg", alt: "A 3d render of a flying car chased by a cop, weaving through traffic in a highway tunnel."},
         ]

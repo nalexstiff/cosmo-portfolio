@@ -13,6 +13,9 @@ defineProps({
         </div>
         <div class="project-items-list">
             <template v-for="item in items">
+                <div v-if="item.type == 'embed'" class="project-item embed-container" height="56.25%">
+                    <iframe :src="item.url" class="project-item embed-content"></iframe>
+                </div>
                 <img v-if="item.type == 'image'" class="project-item" :src="'/artwork/' + item.src" :alt="item.alt" /> 
             </template>
         </div>
@@ -35,6 +38,26 @@ defineProps({
 
 .project-item {
     width: 100%;
+}
+
+.embed-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.embed-container::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+
+.embed-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 @media only screen and (max-width: 766px) {
